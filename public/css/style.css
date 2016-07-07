@@ -1,0 +1,39 @@
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	line-height: 1.42857143;
+	color: #777777;
+}
+
+.panel-body {
+	padding: 15px;
+}
+
+.submitBtn {
+	margin-left: 10px;
+}
+
+.booktitle {
+	color: #de4f4f;
+	text-decoration: none;
+}
+
+/*select {*/
+	/*border: 1px solid #111;*/
+	/*text-align: center;*/
+	/*background: transparent;*/
+	/*width: 50px;*/
+	/*padding: 5px;*/
+	/*font-size: 16px;*/
+	/*border: 1px solid #ccc;*/
+/*}*/
+
+select {
+	/*background-color:#91EB76;*/
+	width: 180px;
+	padding: 5px;
+	font-size: 16px;
+	border: 1px solid #ccc;
+	height: 34px;
+}

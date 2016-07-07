@@ -1,0 +1,43 @@
+<div class="container" ng-controller="homeController">
+    <div class="row">
+        <form name="myForm">
+            <fieldset class="form-group">
+                <label for="yearSelect" class="col-sm-1 -label"> Year: </label>
+                <div class="col-sm-11">
+                    <select name="yearSelect" id="yearSelect" ng-model="year" class="btn btn-default " ng-change="onMnfYearChange()">
+                        <option ng-repeat="option in mnfYear" value="{{option}}">{{option}}</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <fieldset class="form-group">
+                <label for="makeSelect" class="col-sm-1 -label"> Make: </label>
+                <div class="col-sm-11">
+                    <select name="makeSelect" id="makeSelect" ng-model="carMake" ng-change="onCarMakeChange()" ng-disabled="makeSelectDisable" class="btn btn-default ">
+                        <option ng-repeat="option in make" value="{{option}}">{{option}}</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <fieldset class="form-group">
+                <label for="modelSelect" class="col-sm-1 -label"> Model: </label>
+                <div class="col-sm-11">
+                    <select name="modelSelect" id="modelSelect" ng-model="data.model" ng-disabled="modelSelectDisable" class="btn btn-default ">
+                        <option ng-repeat="option in model" value="{{option}}">{{option}}</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <fieldset class="form-group">
+                <label for="optionSelect" class="col-sm-1 -label"> Option: </label>
+                <div class="col-sm-11">
+                    <select name="optionSelect" id="optionSelect" ng-model="data.model" ng-disabled="optionSelectDisable" class="btn btn-default ">
+                        <option ng-repeat="option in opts" value="{{option}}">{{option}}</option>
+                    </select>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</div>
+
+
